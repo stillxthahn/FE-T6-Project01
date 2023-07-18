@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+:root {
+  --font: "DM Sans", sans-serif;
+  --header-color: #232323;
+  --bg-color: #efefef;
+  --text-color: #777777;
+
+  --square-primary-color: #fff;
+  --btn-hightlight-color: #f7d9c4;
+
+  --btn-primary-color: #1b2026;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+}
+
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 928px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 690px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 510px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+body {
+  font-family: var(--font);
+  color: var(--font-color);
+  background-color: var(--bg-color);
+}
+
+a,
+span {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.square {
+  background-color: var(--square-primary-color);
+  border-radius: 10px;
+}
+
+.btn-primary {
+  padding: 16px 41.6px;
+  display: inline-block;
+  border: 2px solid var(--btn-primary-color);
+  background-color: var(--btn-primary-color);
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 4px;
+  margin: 9.6px;
+  line-height: 24px;
+}
+
+.btn-hightlight {
+  color: #000;
+  background-color: var(--btn-hightlight-color) !important;
+  border-color: var(--btn-hightlight-color) !important;
+}
+
+.section-heading {
+  color: #fff;
+}
+.heading-name {
+  margin-bottom: 16px;
+  font-size: 17.6px;
+  font-weight: 700;
+}
+.heading-title {
+  font-size: 49.6px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.heading-desc {
+  color: var(--text-color);
+  font-size: 17.6px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 41.6px;
+}
+
+.dark-theme .heading-name {
+  color: var(--text-color);
+}
+
+.dark-theme .heading-title {
+  color: var(--header-color);
+}
+
+.color-text {
+  color: var(--text-color) !important;
+  font-size: 17.6px !important;
+  font-weight: 400 !important;
+}
+.large-title .heading-title {
+  font-size: 60.8px !important;
+  line-height: 1.1 !important;
+}
