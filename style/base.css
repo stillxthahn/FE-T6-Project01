@@ -54,6 +54,11 @@ body {
   background-color: var(--bg-color);
 }
 
+input,
+textarea {
+  border: none;
+  outline: none;
+}
 a,
 span {
   text-decoration: none;
